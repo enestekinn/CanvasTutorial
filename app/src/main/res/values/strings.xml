@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CanvasTutorial</string>
+    <string name="title_activity_basic_shape">BasicShapeActivity</string>
+    <string name="title_activity_ball_clicker_game">BallClickerGame</string>
+</resources>
