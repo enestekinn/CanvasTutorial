@@ -2,4 +2,7 @@
     <string name="app_name">CanvasTutorial</string>
     <string name="title_activity_basic_shape">BasicShapeActivity</string>
     <string name="title_activity_ball_clicker_game">BallClickerGame</string>
+    <string name="title_activity_draw_text">DrawTextActivity</string>
+    <string name="title_activity_deneme">Deneme</string>
+    <string name="title_activity_weight_picker">WeightPicker</string>
 </resources>

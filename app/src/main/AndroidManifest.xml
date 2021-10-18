@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.enestekin.canvastutorial" >
+    package="com.enestekin.canvastutorial">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CanvasTutorial" >
+        android:theme="@style/Theme.CanvasTutorial">
+        <activity
+            android:name=".ui.weightpicker.WeightPicker"
+            android:exported="false"
+            android:label="@string/title_activity_weight_picker"
+            android:theme="@style/Theme.CanvasTutorial" />
+        <activity
+            android:name=".DrawText"
+            android:exported="false"
+            android:label="@string/title_activity_draw_text"
+            android:theme="@style/Theme.CanvasTutorial" />
         <activity
             android:name=".BallClickerGame"
             android:exported="true"
@@ -23,7 +33,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.CanvasTutorial" >
+            android:theme="@style/Theme.CanvasTutorial">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

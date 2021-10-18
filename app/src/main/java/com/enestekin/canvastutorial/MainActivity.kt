@@ -18,6 +18,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.core.content.ContextCompat.startActivity
 import com.enestekin.canvastutorial.ui.theme.CanvasTutorialTheme
+import com.enestekin.canvastutorial.ui.weightpicker.WeightPicker
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -68,6 +69,33 @@ fun ButtonsContainer(){
                 style = TextStyle(MaterialTheme.colors.onPrimary)
             )
         }
+
+        Spacer(modifier = Modifier.height(20.dp))
+        Button(
+            onClick = {
+                openDrawTextActivity()
+            },
+            modifier = Modifier.background(MaterialTheme.colors.primary)
+        ) {
+            Text(
+                text = "Draw Text",
+                modifier = Modifier.wrapContentSize(),
+                style = TextStyle(MaterialTheme.colors.onPrimary)
+            )
+        }
+        Spacer(modifier = Modifier.height(20.dp))
+        Button(
+            onClick = {
+                weightPicker()
+            },
+            modifier = Modifier.background(MaterialTheme.colors.primary)
+        ) {
+            Text(
+                text = "Weight Picker",
+                modifier = Modifier.wrapContentSize(),
+                style = TextStyle(MaterialTheme.colors.onPrimary)
+            )
+        }
     }
 }
 private fun openBasicShapeActivity(){
@@ -77,6 +105,15 @@ private fun openBasicShapeActivity(){
 
     private fun openBallClickerGameActivity(){
         val intent = Intent(this,BallClickerGame::class.java)
+        startActivity(intent)
+    }
+    private fun openDrawTextActivity() {
+        val intent = Intent(this, DrawText::class.java)
+        startActivity(intent)
+    }
+
+    private fun weightPicker() {
+        val intent = Intent(this, WeightPicker::class.java)
         startActivity(intent)
     }
     }
